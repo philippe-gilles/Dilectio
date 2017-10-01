@@ -1,0 +1,38 @@
+/*
+ * DILECTUS CSS TYPE AGENDA
+ *
+*/
+
+/**********************************************************************
+ * Formulaire
+ */
+.dilectio-new-post-form-agenda-field-date{display:block!important;}
+.dilectio-new-post-form-agenda-field-title{display:block!important;width:90%!important;}
+.dilectio-new-post-form-agenda-field-descr{display:block!important;width:90%!important;}
+
+/**********************************************************************
+ * Extraits
+ */
+.dilectio-type-agenda-extrait-container{height:auto;max-height:90px;margin:0;padding:0;overflow:hidden;word-wrap:break-word;text-overflow: ellipsis;}
+.dilectio-type-agenda-extrait-label{font-size:14px;vertical-align:middle;line-height:20px;text-align:left;font-weight:bold;color:#333;margin:0;padding:0}
+.dilectio-type-agenda-extrait-caption{font-size:14px;text-align:left;font-style:italic;color:#555;margin:0;padding:0;line-height:16px;}
+.dilectio-type-agenda-extrait-horodatage{margin-top:4px;text-align:left;color:#333;margin:0;padding:0}
+.dilectio-type-agenda-extrait-icone1{font-size:32px;line-height:32px;vertical-align:middle;margin-right:6px;}
+.dilectio-type-agenda-extrait-icone2{font-size:32px;line-height:32px;vertical-align:middle;margin-left:12px;margin-right:6px;}
+.dilectio-type-agenda-extrait-date{font-size:14px;line-height:32px;vertical-align:middle;}
+.dilectio-type-agenda-extrait-time{font-size:14px;line-height:32px;vertical-align:middle;}
+
+/**********************************************************************
+ * Posts
+ */
+
+.dilectio-type-agenda-post-label{font-size:20px;vertical-align:middle;line-height:28px;text-align:left;font-weight:bold;color:#333;margin:0;padding:0}
+.dilectio-type-agenda-post-caption{font-size:16px;line-height:24px;text-align:left;font-style:italic;color:#555;margin:0;padding:0}
+.dilectio-type-agenda-post-horodatage{margin-top:4px;text-align:left;color:#333;margin:0;padding:0}
+.dilectio-type-agenda-post-icone1{font-size:48px;line-height:48px;vertical-align:middle;margin-right:12px;}
+.dilectio-type-agenda-post-icone2{font-size:48px;line-height:48px;vertical-align:middle;margin-left:18px;margin-right:12px;}
+.dilectio-type-agenda-post-date{font-size:18px;line-height:48px;vertical-align:middle;}
+.dilectio-type-agenda-post-time{font-size:18px;line-height:48px;vertical-align:middle;}
+.dilectio-type-agenda-post-button_container{text-align:left;padding:6px 0;}
+.dilectio-type-agenda-post-button-download{display:inline-block;margin-right:28px;}
+.dilectio-type-agenda-post-button-send{display:inline-block;}

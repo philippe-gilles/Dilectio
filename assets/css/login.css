@@ -1,0 +1,38 @@
+/*
+ * Dilectio : CSS page index
+ */
+
+.dilectio-login-layout{width:100%;text-align:center;margin:0;}
+
+/* Bandeau de titre */
+.dilectio_bandeau_titre{font-size:120px;color:#f88;text-align:center;margin:10px auto;}
+
+/* Panneau login */
+.dilectio_panneau_login{display:inline-block;text-align:center;padding:20px 25px;background:rgba(255, 255, 255, 0.3);border-radius:30px;overflow:hidden;}
+.dilectio_panneau_login_image{display:inline;margin:0 6px;overflow:hidden;}
+.dilectio_form_login{position:relative;}
+.dilectio_panneau_login_image img{width:125px;height:125px;border-radius:63px;}
+.dilectio_panneau_lien_image, .dilectio_panneau_lien_image:visited{opacity:0.8;}
+.dilectio_panneau_lien_image:hover{opacity:1;}
+.dilectio_panneau_lien_image_visited, .dilectio_panneau_lien_image_visited:visited{opacity:1;}
+.dilectio_panneau_lien_image_visited:hover{opacity:0.8;}
+.dilectio_panneau_login_mdp{width:90%;margin:0 auto;}
+
+/* Formulaire login */
+.dilectio_form_login{display:none;}
+.dilectio_form_login input[type='text']{display:none;}
+.dilectio_form_login .mdl-textfield{color:#000;}
+.mdl-textfield__input:focus {border-bottom-color:#000;box-shadow: 0 1px 0 0 #000;}
+.mdl-textfield__label:after {background:#000!important;}
+.mdl-textfield__label{color:#000!important;}
+.jconfirm-box{background:rgba(255, 255, 255, 0.9)!important;}
+
+
+@media screen and (max-width: 700px) {
+.dilectio_bandeau_titre{font-size:70px;margin:0 auto!important;}
+}
+
+@media screen and (max-height: 500px) {
+.dilectio_bandeau_titre{font-size:50px;margin:0 auto!important;}
+.dilectio_panneau_login_image img{width:80px;height:80px;border-radius:40px;}
+}

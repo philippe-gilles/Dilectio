@@ -1,0 +1,19 @@
+/* Surcharges */
+.mdl-textfield__label{font-size:16px!important;font-weight:bold;}
+.mdl-textfield input{margin-top:6px!important;}
+
+/* Formulaire */
+.dilectio-security-form{display:inline-block;margin:16px;padding:24px;background:#fff;min-width:50%;}
+.dilectio-security-form h2{font-size:24px;color:#888;font-weight:bold;margin:0;padding:0;}
+.dilectio-security-form-container{margin-bottom:8px;}
+
+/* Indicateur force mot de passe */
+.dilectio-security-gradient-container{display:block;position:relative;width:300px;height:12px;background:#0d0;border:1px solid #ccc;margin:0;padding:0;overflow:hidden;}
+.dilectio-security-gradient-obfuscator{position:absolute;top:0;right:0;height:100%;width:100%;background:#b00;transition:width 0.5s;}
+.dilectio-security-suggestion-container{display:block;position:relative;background:#fff;margin:0;padding:0;overflow:hidden;min-height:40px;}
+.dilectio-security-suggestion-container p{font-size:11px;color:#666;font-weight:bold;margin:0;padding:6px;line-height:16px;}
+
+/* Soumission */
+.dilectio-security-submit-comment, .dilectio-security-submit-nocomment{margin:0;padding:0;font-size:11px;font-style:italic;line-height:13px;height:13px;color:#a00;}
+.dilectio-security-submit-comment{display:block;}
+.dilectio-security-submit-nocomment{display:none;}

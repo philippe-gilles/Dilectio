@@ -1,0 +1,3 @@
+# DILECTIO
+User-agent: *
+Disallow: /

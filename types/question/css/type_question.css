@@ -1,0 +1,49 @@
+/*
+ * DILECTUS CSS TYPE QUESTION
+ *
+*/
+
+/**********************************************************************
+ * Formulaire
+ */
+
+.dilectio-new-post-form-question-field{display:block!important;width:90%!important;}
+.dilectio-new-post-form-question-counter{display:inline-block;width:300px;overflow:hidden;}
+.dilectio-new-post-form-question-choices{margin-right:8px;}
+.dilectio-new-post-form-question-answers{margin-right:8px;}
+.dilectio-new-post-form-question-number{width:40px!important;text-align:center!important;padding:10px 0!important;}
+.dilectio-new-post-form-question-number input{text-align:center!important;color:#555!important;}
+.dilectio-new-post-form-question-list{display:block;}
+.dilectio-new-post-form-answer{}
+.dilectio-new-post-form-answer-field{padding:5px 0!important;}
+.dilectio-new-post-form-answer-label{font-weight:bold;margin-right:12px;}
+
+/**********************************************************************
+ * Extraits
+ */
+.dilectio-type-question-extrait-label{font-size:14px;vertical-align:middle;line-height:20px;text-align:left;font-weight:bold;color:#333;margin:0;padding:0}
+.dilectio-type-question-extrait-choix{font-size:14px;text-align:left;font-style:italic;color:#555;margin:0;padding:0;line-height:16px;}
+.dilectio-type-question-extrait-reponse{text-align:left;color:#333;margin:0;padding:0;line-height:24px;}
+.dilectio-type-question-extrait-reponse span{font-size:16px;vertical-align:middle;line-height:24px;}
+.dilectio-type-question-extrait-reponse i{font-size:24px;vertical-align:middle;line-height:24px;margin-right:8px;}
+
+/**********************************************************************
+ * Posts
+ */
+.dilectio-type-question-post-label{font-size:20px;vertical-align:middle;line-height:28px;text-align:left;font-weight:bold;color:#333;margin:0;padding:0}
+.dilectio-type-question-post-choix{font-size:16px;line-height:24px;text-align:left;font-style:italic;color:#555;margin:0;padding:0}
+.dilectio-type-question-post-reponse{text-align:left;color:#333;margin:0;padding:6px 0 5px 6px;line-height:24px;}
+.dilectio-type-question-post-reponse span{font-size:16px;vertical-align:middle;line-height:24px;}
+.dilectio-type-question-post-reponse i{font-size:24px;vertical-align:middle;line-height:24px;margin-right:8px;}
+.dilectio-type-question-post-reponse-caption{font-size:16px;line-height:24px;text-align:left;font-weight:bold;font-style:italic;color:#666;margin:6px 0 0 0;padding:0}
+.dilectio-type-question-post-reponse-auteur{margin:6px 0 10px 0;padding:0;text-align:left;}
+.dilectio-type-question-post-reponse-auteur img{vertical-align:middle;}
+.dilectio-type-question-post-reponse-auteur span{font-size:14px;color:#444;vertical-align:middle;}
+.dilectio-type-question-post-answer-form{display:block;text-align:left;}
+.dilectio-type-question-post-check-reponse{text-align:left;padding:6px 0 6px 12px;margin:0;}
+.dilectio-type-question-post-check-reponse input, .dilectio-type-question-post-check-reponse label, .dilectio-type-question-post-check-reponse span {vertical-align:middle;}
+.dilectio-type-question-post-check-reponse label{width:auto!important;}
+.dilectio-type-question-post-check-label{text-align:left;padding:0 0 0 6px;color:#333;}
+.dilectio-type-question-post-caption{width:90%!important;text-align:left;}
+.dilectio-type-question-post-icone-sans{color:#aaa;}
+

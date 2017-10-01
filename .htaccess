@@ -1,0 +1,60 @@
+#
+# Dilectio : htaccess
+#
+
+# Occultation de la signature Apache
+ServerSignature Off
+
+# Interdiction de lister le contenu des dossiers
+Options -Indexes
+
+# Redirection en cas d'accès à un dossier
+DirectoryIndex index.php
+
+# ZIP du HTML et des assets
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE font/eot
+AddOutputFilterByType DEFLATE font/opentype
+AddOutputFilterByType DEFLATE application/x-font-ttf
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE application/javascript
+</ifmodule>
+
+# Redirection pour routage
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.php [L]
+
+# Sécurités
+RewriteCond %{REQUEST_METHOD} ^(HEAD|TRACE|DELETE|TRACK) [NC,OR]
+RewriteCond %{THE_REQUEST} (\\r|\\n|%0A|%0D) [NC,OR]
+
+RewriteCond %{HTTP_REFERER} (<|>|’|%0A|%0D|%27|%3C|%3E|%00) [NC,OR]
+RewriteCond %{HTTP_COOKIE} (<|>|’|%0A|%0D|%27|%3C|%3E|%00) [NC,OR]
+RewriteCond %{REQUEST_URI} ^/(,|;|:|<|>|”>|”<|/|\\\.\.\\).{0,9999} [NC,OR]
+
+RewriteCond %{HTTP_USER_AGENT} ^$ [OR]
+RewriteCond %{HTTP_USER_AGENT} ^(java|curl|wget) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (<|>|’|%0A|%0D|%27|%3C|%3E|%00) [NC,OR]
+
+RewriteCond %{QUERY_STRING} (;|<|>|’|”|\)|%0A|%0D|%22|%27|%3C|%3E|%00).*(/\*|union|select|insert|cast|set|declare|drop|update|md5|benchmark) [NC,OR]
+RewriteCond %{QUERY_STRING} \.\./\.\. [OR]
+
+RewriteCond %{QUERY_STRING} (localhost|loopback|127\.0\.0\.1) [NC,OR]
+RewriteCond %{QUERY_STRING} \.[a-z0-9] [NC,OR]
+RewriteCond %{QUERY_STRING} (<|>|’|%0A|%0D|%27|%3C|%3E|%00) [NC]
+RewriteRule .* index.php [F]
+
+# Blocage des robots "officiels"
+<Files *>
+	Header set X-Robots-Tag "noindex, nofollow"
+</Files>
+
+# Deny de ce fichier
+<files .htaccess>
+order allow,deny
+deny from all
+</files>

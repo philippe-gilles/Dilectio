@@ -1,0 +1,56 @@
+/* 
+ * CSS Calendrier
+ */
+
+/* Flexbox */
+.dilectio-calendar {box-sizing:border-box;width:100%;height:100%;display:flex;flex-direction:column;}
+.dilectio-calendar > header {flex-grow: 7;display: flex; align-items:center;justify-content:center;}
+.dilectio-calendar .day-names {flex-grow: 5;display:flex;align-items:center;}
+.dilectio-calendar .day-names p {flex-grow: 1;text-align: center;}
+.dilectio-calendar .days {flex-grow:88;display:flex; flex-direction: row;flex-wrap:wrap;}
+.dilectio-calendar .days > div {width:14.2857%;}
+
+/* Apparence générale */
+.dilectio-calendar {font-weight:normal;border:1px solid #ddd;padding-bottom:50px;}
+.dilectio-calendar > header {background:#fcfcfc;}
+.dilectio-calendar > header h1 {font-size:24px;line-height:32px;font-weight:bold;text-transform:uppercase;margin:0;padding:0;}
+.dilectio-calendar .day-names {background:#eee;font-weight: bold;text-transform:uppercase;}
+.dilectio-calendar .day-names p{margin:0;padding:0;}
+.dilectio-calendar .day-names, .dilectio-calendar .days {font-size:16px;color:#666;}
+.dilectio-calendar .spacer  {background:#aaa!important;}
+.dilectio-calendar .days > div {box-sizing:border-box;border:1px solid #eee;border-width:1px 0 0 1px;}
+.dilectio-calendar .days > div:nth-child(-n+7) {border-top-width: 0;}
+.dilectio-calendar .days > div:nth-child(7n+1) {border-left-width: 0;}
+
+.dilectio-calendar > header{color:#fff;text-shadow: 1px 1px 1px #000;background: #000;opacity: .95;}
+.dilectio-calendar .days{background:#fff;}
+
+/* Numéros de jour */
+.dilectio-calendar .day{box-sizing:border-box;position:relative;padding-top:18px;overflow:hidden;}
+.dilectio-calendar .day .day-number {position:absolute;top:6px;right:6px;font-size:14px;line-height:14px;padding:0;}
+.dilectio-calendar .day .day-number {color:#333;}
+
+/* Week ends */
+.dilectio-calendar .days > div:nth-child(7n+6), .dilectio-calendar .days > div:nth-child(7n+7) {background:#ddd;}
+
+/* Aujourd'hui */
+.dilectio-calendar .day-today{border-width:4px 3px 3px 4px!important;padding-top:15px!important;}
+.dilectio-calendar .day-today .day-number {top:4px!important;}
+
+/* Evénements grande largeur */
+.dilectio-calendar  .large-event{display:block;text-align:left;margin:6px 0 0 0;padding:3px 6px;overflow:hidden;font-size:12px;line-height:16px;height:16px;text-decoration:none;text-overflow: ellipsis;white-space: nowrap;}
+.dilectio-calendar  .large-event{background:#333;color:#fff;}
+
+/* Evénements petite largeur */
+.dilectio-calendar  .small-event{display:none;width:10px;height:10px;border-radius:10px;margin:3px;}
+.dilectio-calendar  .small-event{background:#333;color:#fff;}
+
+@media screen and (max-width: 600px), screen and (max-height: 400px) {
+.dilectio-calendar .day{padding-top:15px!important;}
+.dilectio-calendar .day .day-number{font-size:12px;line-height:12px;top:4px;right:4px;}
+.dilectio-calendar .day-today .day-number {top:1px!important;}
+.dilectio-calendar .day-names, .dilectio-calendar .days {font-size:14px;}
+.dilectio-calendar  .large-event{display:none;}
+.dilectio-calendar  .small-event{display:inline-block;}
+}
+

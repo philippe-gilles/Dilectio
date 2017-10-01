@@ -1,0 +1,43 @@
+.dilectio-config-category-tree-management{padding:0 20px 0 30px;margin:10px 0 20px 0;}
+.dilectio-config-category-tree-expand, .dilectio-config-category-tree-collapse, .dilectio-config-category-tree-sort{font-size:20px;margin-right:20px;}
+
+.dilectio-config-category-new{padding:0 20px 0 30px;margin:30px 0 50px 0;}
+.dilectio-config-category-new-button{font-weight:bold;}
+.dilectio-config-category-field{padding:0 4px!important;vertical-align:middle;}
+.dilectio-config-category-name{padding:0!important;font-size:16px;line-height:20px;vertical-align:middle;}
+.dilectio-config-category-done{color:#0a0;margin-right:6px;float:right;display:none;}
+.dilectio-config-category-done i{font-weight:bold;font-size:20px!important;}
+.dilectio-config-category-undo{color:#555;margin-right:6px;float:right;display:none;}
+.dilectio-config-category-undo i{font-weight:bold;font-size:20px!important;}
+.dilectio-config-category-delete{color:#a00;float:right;}
+.dilectio-config-category-delete i{font-size:20px!important;}
+.dilectio-config-category-done:after, .dilectio-config-category-undo:after, .dilectio-config-category-delete:after{clear:both;float:none;display:block;}
+
+/* Nestable */
+.dilectio-nestable{position:relative;display:block;margin:0;list-style:none;max-width:600px;padding:0 20px 0 30px;}
+.dilectio-nestable-list{display:block;position:relative;margin:0;padding:0;list-style:none}
+.dilectio-nestable-list .dilectio-nestable-list{padding-left:30px}
+.dilectio-nestable-empty,.dilectio-nestable-item,.dilectio-nestable-placeholder{display:block;position:relative;margin:0;padding:0;min-height:20px;font-size:13px;line-height:20px}
+.dilectio-nestable-handle{display:block;height:30px;margin:5px 0;padding:7px 0 0 3px;color:#333;text-decoration:none;border:1px solid #ccc;background:transparent;border-radius:3px;box-sizing:border-box}
+.dilectio-nestable-item>button{position:relative;cursor:pointer;float:left;width:32px;margin:5px;padding:0;white-space:nowrap;overflow:hidden;border:0;background:0 0;font-size:24px;line-height:1;text-align:center;}
+.dilectio-nestable-item>button:before{display:block;position:absolute;width:100%;text-align:center;text-indent:0}
+.dilectio-nestable-expand{display:none}
+.dilectio-nestable-collapsed .dilectio-nestable-collapse,.dilectio-nestable-collapsed .dilectio-nestable-list{display:none}
+.dilectio-nestable-collapsed .dilectio-nestable-expand{display:block}
+.dilectio-nestable-empty,.dilectio-nestable-placeholder{margin:5px 0;padding:0;min-height:30px;background:#fffbf2;border:2px dashed #bbb;box-sizing:border-box;}
+.dilectio-nestable-empty{border:2px dashed #bbb;min-height:100px;background-color:#e5e5e5;background-size:60px 60px;background-position:0 0,30px 30px}
+.dilectio-nestable-dragel{position:absolute;pointer-events:none;z-index:9999}
+.dilectio-nestable-dragel>.dilectio-nestable-item .dilectio-nestable-handle{margin-top:0}
+.dilectio-nestable-dragel .dilectio-nestable-handle{box-shadow:2px 4px 6px 0 rgba(0,0,0,.1)}
+.dilectio-nestable-list .dilectio-nestable-handle{height:40px}
+.dilectio-nestable-list .dilectio-nestable-empty,.dilectio-nestable-list .dilectio-nestable-item,.dilectio-nestable-list .dilectio-nestable-placeholder{display:block;font-size:14px;line-height:32px}.dilectio-nestable-list .dilectio-nestable-item>button{height:32px}
+.dilectio-nestable-list ol{margin:0 0 0 25px;padding:0;list-style-type:none}
+.dilectio-nestable-list li{margin:5px 0 0;padding:0}
+
+
+/* Extension : poignée indépendantes du contenu */
+.dilectio-nestable-extension-content{display:block;height:40px;min-width:320px;max-width:500px;margin:5px 0;padding:2px 10px 3px 40px;color:#333;text-decoration:none;border:1px solid #ccc;background:#fff;border-radius:3px;box-sizing:border-box;}
+.dilectio-nestable-dragel > .dilectio-nestable-extension-item > .dilectio-nestable-extension-content {margin:0;}
+.dilectio-nestable-extension-item > button {margin-left:40px;}
+.dilectio-nestable-extension-handle{position: absolute;margin:0;left:0;top:0;width:36px;text-align:center;white-space: nowrap;overflow: hidden;border-top-right-radius: 0;border-bottom-right-radius: 0;cursor:move;}
+.dilectio-nestable-extension-handle:hover{}

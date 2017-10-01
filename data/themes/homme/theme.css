@@ -1,0 +1,77 @@
+/*
+ * Dilectus
+ *
+ * Thème homme
+ */
+
+/* Fonds des panneaux pour le layout de base */
+.dilectio-lateral{background: #212121 !important;}
+.dilectio-navigation{background: #616161 !important;}
+.dilectio-superieur{background: #f5f5f5 !important;}
+.dilectio-principal{background: url('img/wp2.png') repeat!important;}
+
+/* Formulaires types */
+.trumbowyg-box{min-height:200px!important;}
+.trumbowyg-editor{background:#fff;min-height:200px!important;}
+.dilectio-new-post-form-photo-fields{background:#fff;}
+.dilectio-new-post-form-link-fields{background:#fff;}
+.dilectio-new-post-form-question-fields{background:#fff;}
+.dilectio-new-post-form-agenda-fields{background:#fff;}
+
+/* Nice select */
+#nice-filter-categorie::after{border-color:rgb(175,180,43)!important;border-width:3px!important;}
+#nice-filter-categorie.dilectio-nice-select-not-null-val{background-color: #fff;border: solid 2px rgb(205,220,57);}
+#nice-filter-categorie.dilectio-nice-select-null-val{background-color: rgba(255, 255, 255, 0.7);}
+#nice-filter-categorie .dilectio-nice-option-icomoon{font-size:14px;padding:5px;color:#333;background:#eee;border-radius:12px;}
+
+#nice-filter-type::after{border-color:rgb(175,180,43)!important;border-width:3px!important;}
+#nice-filter-type.dilectio-nice-select-not-null-val{background-color: #fff;border: solid 2px rgb(205,220,57);}
+#nice-filter-type.dilectio-nice-select-null-val{background-color: rgba(255, 255, 255, 0.7);}
+#nice-filter-type .dilectio-nice-option-icomoon{font-size:14px;padding:5px;color:#333;background:#eee;border-radius:12px;}
+
+#nice-select-categorie.open::after{border-color:rgb(175,180,43)!important;border-width:3px!important;}
+#nice-select-categorie{background:transparent!important;border:none!important;}
+#nice-select-categorie .list{margin-top:-4px!important;}
+
+/* Latéral */
+#clear-filters:enabled{color:rgb(205,220,57)!important;}
+.dilectio-navigation-label, .dilectio-navigation-type-post-label, .dilectio-navigation-type-post-label-inactif{color:#fff!important;}
+.dilectio-navigation-type-post:hover{background:#f00!important;}
+.dilectio-navigation-type-post-icone, .dilectio-notification-icone-type{color:#fff!important;background:rgb(175,180,43)!important;}
+.dilectio-navigation-type-post-icone-inactive{color:#fff!important;background:#aaa!important;}
+.dilectio-navigation-link-selected .dilectio-navigation-type-post-icone{background:#888!important;}
+.dilectio-navigation-link-selected .dilectio-navigation-type-post-label{font-weight:bold!important;}
+.dilectio-navigation-toggle-views{border-top:1px solid #ddd;}
+.dilectio-navigation-toggle-view-link, .dilectio-navigation-toggle-view-link:visited{color:#ddd;transition:color 0.2s;}
+.dilectio-navigation-toggle-view-link:hover{color:#fff;}
+
+/* Extraits système */
+.dilectio-extrait-system{background:rgba(255, 255, 255, 0.5)!important;border:1px solid #000!important;}
+.dilectio-extrait-system .dilectio-extrait-fil{color:#000!important;font-weight:bold!important;}
+
+/* Posts images */
+.dilectio-image-wrapper{border-radius:5px;}
+
+/* Formulaire profil */
+.dilectio-profile-form{border-radius:5px;}
+
+/* Formulaire agenda (flatpickr) */
+.flatpickr-calendar.arrowTop:after {border-bottom-color: rgb(205,220,57);}
+.flatpickr-calendar.arrowBottom:after {border-top-color: rgb(205,220,57);}
+.flatpickr-current-month .numInputWrapper span.arrowUp:after {border-bottom-color: #fff;}
+.flatpickr-current-month .numInputWrapper span.arrowDown:after {border-top-color: #fff;}
+.flatpickr-month {background: rgb(205,220,57);color: #fff;fill: #fff;}
+.flatpickr-weekdays {background: rgb(205,220,57);}
+span.flatpickr-weekday {background: rgb(205,220,57);}
+.flatpickr-day.endRange.nextMonthDay {background: rgb(205,220,57);border-color: rgb(205,220,57);}
+.flatpickr-day.endRange.startRange + .endRange {-webkit-box-shadow: -10px 0 0 rgb(205,220,57);box-shadow: -10px 0 0 rgb(205,220,57);}
+.flatpickr-day.week.selected {-webkit-box-shadow: -5px 0 0 rgb(205,220,57), 5px 0 0 rgb(205,220,57)!important;box-shadow: -5px 0 0 rgb(205,220,57), 5px 0 0 rgb(205,220,57)!important;}
+.flatpickr-day.selected, .flatpickr-day.selected:hover {background: rgb(124,77,255)!important;color: #fff;border-color: rgb(124,77,255)!important;}
+.flatpickr-confirm {color:#fff;background:rgb(175,180,43);}
+
+/* Calendrier */
+.dilectio-calendar  .day-names{color:#fff!important;background:rgb(175,180,43)!important;}
+.dilectio-calendar  .day-names > p{font-weight:bold!important;}
+.dilectio-calendar .day-today .day-number{color:#a00!important;font-weight:bold!important;}
+.dilectio-calendar  .large-event{background: rgb(124,77,255)!important;}
+.dilectio-calendar  .small-event{background: rgb(124,77,255)!important;}

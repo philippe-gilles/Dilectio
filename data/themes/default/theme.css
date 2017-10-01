@@ -1,0 +1,14 @@
+/*
+ * Dilectus
+ *
+ * Thème par défaut
+ */
+
+/* Fond de la page de login */
+.dilectio_fond_page_login{background:url('img/bg.jpg') no-repeat center top scroll;background-color: black;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;}
+
+/* Fonds des panneaux pour le layout de base */
+.dilectio-lateral{background: #212121 !important;}
+.dilectio-navigation{background: #616161 !important;}
+.dilectio-superieur{background: #f5f5f5 !important;}
+.dilectio-principal{background: #e0e0e0 !important;}

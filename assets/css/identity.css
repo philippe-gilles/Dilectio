@@ -1,0 +1,16 @@
+/* Surcharges du composant mdl ext avatar */
+.mdl-avatar{overflow:hidden!important;width:256px!important;}
+.mdl-avatar .mdl-avatar-overlay{width:256px!important;}
+.mdl-avatar-overlay ul.mdl-list li:nth-child(2){display:none;}
+.mdl-avatar>.mdl-avatar__image {width:100%!important;height:100%!important;object-fit:cover;border:1px solid #ccc;box-sizing: border-box;}
+.mdl-avatar .mdl-avatar-overlay .gallery .mdl-avatar__apply {width:58px!important;height:58px!important;margin: 0 6px 8px 0!important;}
+
+/* Autres surcharges */
+.mdl-textfield__label{font-size:16px!important;font-weight:bold;}
+.mdl-textfield input{margin-top:6px!important;}
+
+/* Autres */
+.dilectio-profile-form{display:inline-block;margin:16px;padding:24px;background:#fff;min-width:50%;}
+.dilectio-profile-form-container{margin-bottom:8px;}
+.dilectio-profile-form-container-final{margin-top:32px;margin-bottom:24px;}
+.dilectio-profile-form-container>.mdl-radio{margin-right:16px;}

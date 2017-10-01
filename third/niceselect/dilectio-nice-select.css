@@ -1,0 +1,48 @@
+/*
+ * DILECTUS NICE SELECT
+ *
+ * Inspired from jQuery Nice Select - v1.1.0
+ * https://github.com/hernansartorio/jquery-nice-select
+ * Made by Hernán Sartorio
+*/
+
+/* Les selects sont effacés systématiquement */
+select {display: none;}
+
+/* Gestion des niveaux */
+.dilectio-nice-option-full-level{display:inline-block;border-right:1px solid #ccc;margin-left:6px;width:6px;height:30px;vertical-align:top;}
+.dilectio-nice-option-half-level{display:inline-block;border-right:1px solid #ccc;margin-left:6px;width:6px;height:17px;vertical-align:top;}
+.dilectio-nice-option-blank-level{display:inline-block;margin-right:6px;width:7px;height:30px;vertical-align:top;}
+.dilectio-nice-option-tiret{display:inline-block;border-bottom:1px solid #ccc;margin-right:5px;width:5px;height:16px;vertical-align:top;}
+
+/* Gestion des icones */
+.dilectio-nice-option-icomoon{vertical-align:middle;margin-right:8px;}
+
+/* Champ du nice select */
+.dilectio-nice-select, .dilectio-nice-select-disabled {-webkit-tap-highlight-color: transparent;background-color: #fff;border-radius: 5px;border: solid 2px #e8e8e8;box-sizing: border-box;clear: both;display: block;float: left;font-family: inherit;font-size: 14px;font-weight: normal;height: 32px;line-height: 30px;outline: none;padding-left: 18px;padding-right: 30px;position: relative;text-align: left !important;-webkit-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;white-space: nowrap;width: auto; }
+.dilectio-nice-select{cursor: pointer;}
+.dilectio-nice-select-disabled span{margin-right:27px;}
+.dilectio-nice-select:after {border-bottom: 2px solid #999;border-right: 2px solid #999;content: '';display: block;height: 6px;margin-top: -4px;pointer-events: none;position: absolute;right: 12px;top: 50%;-webkit-transform-origin: 66% 66%;-ms-transform-origin: 66% 66%; transform-origin: 66% 66%;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);-webkit-transition: all 0.15s ease-in-out;transition: all 0.15s ease-in-out;width: 6px; }
+
+/* Bouton d'ouverture/fermeture */
+.dilectio-nice-select.open:after {-webkit-transform: rotate(-135deg);-ms-transform: rotate(-135deg);transform: rotate(-135deg); }
+.dilectio-nice-select.open .list {opacity: 1;pointer-events: auto;-webkit-transform: scale(1) translateY(0);-ms-transform: scale(1) translateY(0);
+transform: scale(1) translateY(0); }
+
+/* Propriétés wide et disabled */
+.dilectio-nice-select.disabled {border-color: #ededed;color: #999;pointer-events: none; }
+.dilectio-nice-select.disabled:after {border-color: #cccccc; }
+.dilectio-nice-select.wide {width: 100%; }
+.dilectio-nice-select.wide .list {left: 0 !important;right: 0 !important; }
+
+/* Liste du nice select */
+.dilectio-nice-select .list {background-color: #fff;border-radius: 5px;box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);box-sizing: border-box;margin-top: 4px;opacity: 0;overflow: hidden;padding: 0;pointer-events: none;position: absolute;top: 100%;left: 0;-webkit-transform-origin: 50% 0;-ms-transform-origin: 50% 0;transform-origin: 50% 0;-webkit-transform: scale(0.75) translateY(-21px);-ms-transform: scale(0.75) translateY(-21px);transform: scale(0.75) translateY(-21px);-webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;z-index: 9; }
+.dilectio-nice-select .list:hover .option:not(:hover) {color:#000;background-color: transparent !important; }
+.dilectio-nice-select .option {cursor: pointer;font-weight: 400;line-height: 30px;list-style: none;min-height: 30px;outline: none;padding-left: 18px;padding-right: 29px;text-align: left;-webkit-transition: all 0.2s;transition: all 0.2s; }
+.dilectio-nice-select .option:hover, .dilectio-nice-select .option.focus, .dilectio-nice-select .option.selected.focus {background-color:#eee; }
+.dilectio-nice-select .option.selected {font-weight: bold; }
+.dilectio-nice-select .option.disabled {background-color: transparent;color: #999;cursor: default; }
+
+/* no-csspointerevents */
+.no-csspointerevents .dilectio-nice-select .list {display: none; }
+.no-csspointerevents .dilectio-nice-select.open .list {display: block; }
